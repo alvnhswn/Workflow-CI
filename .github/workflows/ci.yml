@@ -4,16 +4,17 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  train:
+  train-model:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -23,11 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r MLProject/requirements.txt
 
-      - name: Install MLflow
-        run: |
-          pip install mlflow==2.19.0
-
-      - name: Run Model Training
+      - name: Run MLflow Project
         run: |
           cd MLProject
-          python modelling.py
+          mlflow run .
