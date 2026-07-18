@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r MLProject/requirements.txt
 
-      - name: Run Training
+      - name: Run MLflow Project
         run: |
           cd MLProject
-          python modelling.py
+          python -m mlflow run . --env-manager local
