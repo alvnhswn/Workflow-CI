@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Downloads/Workflow-CI/MLProject/mlruns/0/11148e69aa394692b0359210054eabe9/artifacts
+end_time: 1784370511739
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 11148e69aa394692b0359210054eabe9
+run_name: legendary-panda-721
+run_uuid: 11148e69aa394692b0359210054eabe9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784370511498
+status: 4
+tags: []
+user_id: hp

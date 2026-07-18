@@ -29,28 +29,20 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
+model = LogisticRegression(max_iter=1000)
 
-with mlflow.start_run():
+model.fit(X_train, y_train)
 
-    model = LogisticRegression(max_iter=1000)
+pred = model.predict(X_test)
 
-    model.fit(X_train, y_train)
+acc = accuracy_score(y_test, pred)
+precision = precision_score(y_test, pred)
+recall = recall_score(y_test, pred)
+f1 = f1_score(y_test, pred)
 
-    pred = model.predict(X_test)
-
-    acc = accuracy_score(y_test, pred)
-    precision = precision_score(y_test, pred)
-    recall = recall_score(y_test, pred)
-    f1 = f1_score(y_test, pred)
-
-    print("=" * 40)
-    print("Accuracy :", acc)
-    print("Precision:", precision)
-    print("Recall   :", recall)
-    print("F1 Score :", f1)
-    print("=" * 40)
-
-    mlflow.log_metric("accuracy", acc)
-    mlflow.log_metric("precision", precision)
-    mlflow.log_metric("recall", recall)
-    mlflow.log_metric("f1_score", f1)
+print("=" * 40)
+print("Accuracy :", acc)
+print("Precision:", precision)
+print("Recall   :", recall)
+print("F1 Score :", f1)
+print("=" * 40)

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Downloads/Workflow-CI/MLProject/mlruns/0/6cd55992e056447d9f088dea2091a11e/artifacts
+end_time: 1784370402515
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6cd55992e056447d9f088dea2091a11e
+run_name: thundering-pig-939
+run_uuid: 6cd55992e056447d9f088dea2091a11e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784370382601
+status: 4
+tags: []
+user_id: hp

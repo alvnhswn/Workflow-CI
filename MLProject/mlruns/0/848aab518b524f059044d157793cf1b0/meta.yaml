@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Downloads/Workflow-CI/MLProject/mlruns/0/848aab518b524f059044d157793cf1b0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 848aab518b524f059044d157793cf1b0
+run_name: gentle-donkey-711
+run_uuid: 848aab518b524f059044d157793cf1b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1784370368553
+status: 1
+tags: []
+user_id: hp
